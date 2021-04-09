@@ -1,0 +1,15 @@
+table {
+	border: 1px solid slategray;
+}
+td:hover {
+	background-color: azure;
+	color: black;
+}
+tr, th {
+	background-color: grey;
+	color: ghostwhite;
+}
+tr, td {
+	background-color: sienna;
+	color: black;
+}

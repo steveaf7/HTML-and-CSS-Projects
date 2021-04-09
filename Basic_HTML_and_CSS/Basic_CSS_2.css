@@ -1,0 +1,11 @@
+h1	{
+	color: black;
+	text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+}
+
+p	{
+	color: lightsteelblue;
+	background: black;
+	font-weight: bold;
+	text-align: center-left;
+}
