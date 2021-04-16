@@ -63,3 +63,14 @@ body {
         This also avoids a block-level bug */
     visibility: hidden;
 }
+
+.submenu li {
+    background-color: #387593;
+    display: block;
+    color: #b3b3b3;
+}
+
+.submenu li:hover {
+    color: #fff;
+    background-color: #5eafdf;
+}
