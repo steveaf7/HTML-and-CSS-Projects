@@ -1,0 +1,142 @@
+html {
+    font-family: "Optima", sans-serif;
+    font-size: 62.54;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+body {
+    font-size: 18px;
+    background-color: sandybrown;
+    color: dimgray;
+}
+
+.wrap {
+    display: inline-block;
+}
+
+
+.menu-container {
+    max-height: 340px;
+    margin: 0% auto;
+    content: " ";
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+}
+
+#home 
+section {
+    padding-top: 20px;
+    margin-top: 20px;
+}
+
+.container {
+    display: block;
+    padding: 15px 30px;
+    text-align: center;
+}
+
+/* HOME SECTION */
+h1, h2, {
+    line-height: 50px;
+    font-weight: 900;
+    font-size: 30px;
+    text-align: center;
+
+
+}
+h2::after {
+    display: block;
+    content: "";
+    height: 2px;
+    width: 150px;
+    background: dimgray;
+    margin: 5px auto 40px;
+    box-shadow: 5px auto 3px rgb(182, 23, 23);
+
+}
+
+h3 {
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+iframe {
+    border: 2px solid saddlebrown;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 0px auto;
+    background-color: lightbrown;
+}
+
+.photo {
+    position: relative;
+    line-height: 0;
+    margin-bottom: 2em;
+    overflow: hidden;
+    padding: 1px;
+    border: 1px solid-silver;
+    border-radius: 6px;
+}
+
+.photo-container {
+    text-align: center;
+    margin: 15px auto;
+    width: 340px;
+    height: 215px
+}
+
+.photo-container img {
+    max-width: 100%;
+    width: 340px;
+    height: 215px;
+}
+
+.photo-overlay {
+    color: black;
+} 
+
+/*  CONTACT SECTION */
+.reservation {
+    width: 60%;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 0px auto;
+}
+
+.reservation h2 {
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+
+}
+
+.reservation form {
+    outline: none;
+    font-weight: 600;
+    padding: 12px 12px;
+    width: 70;
+    border: 1 px solid white;
+    margin: 2% auto;
+    border-radius: 7px;
+
+}
+.info {
+    display: block;
+    width: 175px;
+    margin: 10px auto;
+    border: 2px dotted green;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 4px;
+}

@@ -3,12 +3,13 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Shepherd Adventures</title>
+		<link rel="stylesheet" href="./css/one_page_website.css">
 	</head>
 	<body>
 		<!-- NAV -->
-		<div>
-			<div>
-				<ul>
+		<div class="wrap">
+			<div class="menu-container">
+				<ul class="menu">
 					<a href="#home" id="link"><li>HOME</li></a>
 					<a href="#gallery" id="link"><li>GALLERY</li></a>
 					<a href="#contact" id="link"><li>GET IN TOUCH</li></a>
@@ -19,10 +20,10 @@
 		
 		<!-- HOME -->
 		<div id="home">
-			<div>
+			<div class="container">
 				<h1>Welcome to Shepherd Adventures!</h1>
-				<div>
-					<iframe width="956" height="538" src="https://www.youtube.com/embed/NJXnF9clEfA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<div class="video">
+					<iframe width="853" height="480" src="https://www.youtube.com/embed/NJXnF9clEfA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 					<p>
 						<q>When I look into the eyes of an animal I do not see an animal.<br>
 						I see a living being. I see a friend. I feel a soul.</q>
@@ -34,16 +35,16 @@
 		<!-- END HOME -->
 		
 		<!-- GALLERY -->
-		<section>
-			<div id="gallery">
-				<h1>Gallery</h1>
-				<div>
+		<section id="gallery">
+			<div class="container">
+				<h2>Gallery</h2>
+				<div class="flex-container">
 					
 					<!-- PHOTO CONTAINER 1 -->
-					<div>
-						<div>
+					<div class="photo-container">
+						<div class="photo">
 						<img src="./images/thumb/thumbnail_1.jpg" alt="Alert: LOST DOG! lol.">
-							<div>
+							<div class="photo-overlay">
 								<h3>Dogs Love Adventures!</h3>
 							</div>
 						</div>
@@ -51,10 +52,10 @@
 					<!-- END PHOTO CONTAINER 1 -->
 					
 					<!-- PHOTO CONTAINER 2 -->
-					<div>
-						<div>
+					<div class="photo-container">
+						<div class="photo">
 						<img src="./images/thumb/thumbnail_2.jpg" alt="Alert: LOST DOG! lol.">
-							<div>
+							<div class="photo-overlay">
 								<h3>Rottie at Grand Canyon!</h3>
 							</div>
 						</div>
@@ -62,21 +63,21 @@
 					<!-- END PHOTO CONTAINER 2 -->
 					
 					<!-- PHOTO CONTAINER 3 -->
-					<div>
-						<div>
+					<div class="photo-container">
+						<div class="photo">
 						<img src="./images/thumb/thumbnail_3.jpg" alt="Alert: LOST DOG! lol.">
-							<div>
-								<h3>Dad, I want to talk about the next adventure. -Bandit</h3>
+							<div class="photo-overlay">
+								<h3>Bandit chillin.</h3>
 							</div>
 						</div>
 					</div>
 					<!-- END PHOTO CONTAINER 3 -->
 					
 					<!-- PHOTO CONTAINER 4 -->
-					<div>
-						<div>
+					<div class="photo-container">
+						<div class="photo">
 						<img src="./images/thumb/thumbnail_4.jpg" alt="Alert: LOST DOG! lol.">
-							<div>
+							<div class="photo-overlay">
 								<h3>Ninja After Adventures.</h3>
 							</div>
 						</div>
@@ -84,10 +85,10 @@
 					<!-- END PHOTO CONTAINER 4 -->
 					
 					<!-- PHOTO CONTAINER 5 -->
-					<div>
-						<div>
+					<div class="photo-container">
+						<div class="photo">
 						<img src="./images/thumb/thumbnail_5.jpg" alt="Alert: LOST DOG! lol.">
-							<div>
+							<div class="photo-overlay">
 								<h3>Boat Dog!</h3>
 							</div>
 						</div>
@@ -95,10 +96,10 @@
 					<!-- END PHOTO CONTAINER 5 -->
 					
 					<!-- PHOTO CONTAINER 6 -->
-					<div>
-						<div>
+					<div class="photo-container">
+						<div class="photo">
 						<img src="./images/thumb/thumbnail_6.jpg" alt="Alert: LOST DOG! lol.">
-							<div>
+							<div class="photo-overlay">
 								<h3>Walk?</h3>
 							</div>
 						</div>
@@ -106,10 +107,10 @@
 					<!-- END PHOTO CONTAINER 6 -->
 					
 					<!-- PHOTO CONTAINER 7 -->
-					<div>
-						<div>
+					<div class="photo-container">
+						<div class="photo">
 						<img src="./images/thumb/thumbnail_7.jfif" alt="Alert: LOST DOG! lol.">
-							<div>
+							<div class="photo-overlay">
 								<h3>Dogs Love Adventures!</h3>
 							</div>
 						</div>
@@ -117,10 +118,10 @@
 					<!-- END PHOTO CONTAINER 7 -->
 					
 					<!-- PHOTO CONTAINER 8 -->
-					<div>
-						<div>
+					<div class="photo-container">
+						<div class="photo">
 						<img src="./images/thumb/thumbnail_8.jfif" alt="Alert: LOST DOG! lol.">
-							<div>
+							<div class="photo-overlay">
 								<h3>Dogs Love Hangin Out!</h3>
 							</div>
 						</div>
@@ -128,10 +129,10 @@
 					<!-- END PHOTO CONTAINER 8 -->
 					
 					<!-- PHOTO CONTAINER 9 -->
-					<div>
-						<div>
+					<div class="photo-container">
+						<div class="photo">
 						<img src="./images/thumb/thumbnail_9.jfif" alt="Alert: LOST DOG! lol.">
-							<div>
+							<div class="photo-overlay">
 								<h3>Dogs Love TOYS!</h3>
 							</div>
 						</div>
@@ -143,18 +144,18 @@
 		<!-- END GALLERY -->
 		
 		<!-- INFO -->
-		<section>
-			<div id="contact">
-				<div>
-					<h1>GET IN TOUCH</h1>
-					<div>
+		<section id="contact">
+			<div class="container">
+				<div class="heading-padding">
+					<h2>GET IN TOUCH</h2>
+					<div class="reservation">
 						<h2><span>Wanna talk about dogs?</span>
 							<br />Send me your info to start a conversation!
 						</h2>
-						<p>
+						<p class="rsvp-text">
 							Please type your info here.
 						</p>
-						<div>
+						<div class="form-rsvp">
 							<form action='' method="post">
 								<input class="info" type="text" value="Name">
 								<input class="info" type="text" value="Dog's Name">
