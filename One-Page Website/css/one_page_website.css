@@ -40,7 +40,7 @@ section {
 }
 
 /* HOME SECTION */
-h1, h2, {
+h1, h2 {
     line-height: 50px;
     font-weight: 900;
     font-size: 30px;
@@ -86,7 +86,7 @@ iframe {
     overflow: hidden;
     padding: 1px;
     border: 1px solid-silver;
-    border-radius: 6px;
+    border-radius: 8px;
 }
 
 .photo-container {
