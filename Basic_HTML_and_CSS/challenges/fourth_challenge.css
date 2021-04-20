@@ -1,0 +1,13 @@
+.container {
+    position: relative;
+    text-align: center;
+    color: black;
+}
+
+.top-center {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    font-weight: 900;
+    transform: translate(-50%, -50%);
+}

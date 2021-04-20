@@ -1,0 +1,13 @@
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    filter: contrast(150%) hue-rotate(180deg);
+    border-radius: 18px;
+}
+footer {
+    text-align: center;
+    font-weight: 500;
+    margin-top: 5px;
+}

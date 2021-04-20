@@ -1,0 +1,15 @@
+.container {
+position: relative;
+    text-align: center;
+    color: whitesmoke;
+}
+
+#bottom-center {
+    position: absolute;
+    bottom: 8%;
+    left: 50%;
+    font-weight: 900;
+    transform: translate(-50%, -50%); 
+
+}
+
