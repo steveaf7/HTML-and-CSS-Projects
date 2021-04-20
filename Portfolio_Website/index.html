@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--Head-->
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width" />
+        <title>Steven Fralix</title>
+        <link rel="stylesheet" type="text/css" href="portfolio.css">
+    </head>
+
+    <!-- Body -->
+    <body class="Background">
+
+        <!-- Navbar -->
+        <div class="Navbar">
+            <a class="active" href="#Home">Home</a>
+            <a href="#About">About</a>
+            <a href="#GitHub">GitHub</a>
+            <a href="#Contact">Contact</a>
+        </div>
+
+        <!-- Breaks inserted to add space between navbar and first heading -->
+        <br>
+        <br>
+
+        <!-- Background video -->
+        <div id="Home">
+            <video autoplay muted loop id="Typing_Video">
+                <source src="images/videos/video.mp4" type="video/mp4">
+                <!--Display message if video fails to run-->
+                Your browser does not support HTML5 video.
+            </video>
+        </div>
+
+        <!--Video Text-->
+        <div class="Video_Text">
+            <h1 class="white-text">Steven Fralix's Portfolio</h1>
+            <strong>
+                <p class="center">
+                    <q>We all have vast potential inside of us, untapped levels of strength, intelligence, and focus, and the key to activating these superpowers is unlimiting yourself.
+                    </q>
+                    <br> -Jim Kwik
+                    <br>
+                    <br> My name is Steven Fralix. Welcome to my portfolio website. On it, I will tell you about my background and experience.
+                    <br>
+                    <br> Thank you for stopping by and enjoy!
+                </p>
+            </strong>
+        </div>
+
+        <!--About Section-->
+        <div class="Row" id="About">
+            <!--Left Column-->
+            <div class="Column_2">
+                <img src="images/thumbnail_1.png" alt="Cool desktop setup">
+            </div>
+            <!--Right Column-->
+            <div class="Column_1">
+                <h1>About</h1>
+                <p>
+                    Being a musician since I was very young, I have learned to be persistent, and that learning is a lifelong journey. 
+                    <br>
+                    Music has taught to be creative and open-minded, and that work will bring rewards.
+                    <br>
+                    Throughout this journey, I have learned the benefits of collaboration. What can we create together? 
+                </p>
+            </div>
+        </div>
+
+        <!-- GitHub Section-->
+        <div class="Row" id="GitHub">
+            <!--Left Column-->
+            <div class="Column_1">
+                <h1>GitHub</h1>
+                <p>
+                    You can view my coding projects on my GitHub Profile:
+                    <br>
+                    <p class="center"><a href="https://github.com/steveaf7" target="blank">Steven Fralix GitHub</a></p>
+                </p>
+            </div>
+            <!--Right Column-->
+            <div class="Column_2">
+                <a href="https://github.com/steveaf7" target="blank"><img src="images/thumbnail_2.png" alt="GitHub Logo"</a>
+            </div>
+        </div>
+
+
+        <!--Contact Section-->
+        <div class="Row" id="Contact">
+            <!--Contact image, left-column-->
+            <div class="Column_2 Column_tall">
+                <img src="images/thumbnail_3.png" alt="Contact Image">
+            </div>
+            <!--Contact form, right column-->
+            <div class="Column_1 Column_tall">
+                <h1>Collaborate</h1>
+                <form action="" method="POST">
+                    <label>Name:</label>
+                        <input type="text" placeholder="Please enter your name here">
+                    <label>Email:</label>
+                        <input type="text" placeholder="Please enter your email here">
+                    <label>Message:</label>
+                        <input type="text" id="Message" name="Message" placeholder="Please write your message here">
+                        <input type="submit" value="SUBMIT">           
+                </form>
+            </div>
+        </div>
+
+        <!--Footer section-->
+        <footer>
+            <p>
+                <p class="center">&copy;Steven Fralix<a href="https://github.com/steveaf7" target="blank"></a></p>
+                <br>
+            </p>
+        </footer>
+    </body>
+</html>
