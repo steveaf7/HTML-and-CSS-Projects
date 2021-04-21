@@ -95,7 +95,7 @@ footer {
 /***** NAVBAR STYLING *****/
 .Navbar {
     overflow: hidden;
-    background-color: black;
+    background-color: #0D0208;
     position: fixed; /* keeps the navbar on the top as the document is scrolled */
     top: 0; /* This ensures no space is displayed above the navbar */
     width: 100%; /*This makes the navbar span the entire width of the page */
@@ -141,7 +141,7 @@ footer {
 
 /* Navbar hover effects */
 .Navbar a:hover {
-    background-color: #f4f4f4; /* Defines the background color that will display when you hover over the link */
+    background-color: #008F11; /* Defines the background color that will display when you hover over the link */
     color: black; 
     font-weight: bold;
 }
@@ -199,7 +199,7 @@ footer {
     padding: 10px;
     padding-top: 3%; /* Ensures there is space between the top of the column and our headings */
     height: 400px; /* This sets the height of the column to 400px may need to be adjusted */
-    background-color: #f2f2f2; 
+    background-color: #008F11; 
 }
 
 /* Screens 576px and smaller will display a scroll bar if the text overflows the column height */
@@ -215,7 +215,7 @@ footer {
     padding: 10px;
     padding-top: 1.9%;
     height: 400px;
-    background-color: #4d4d4d;
+    background-color: #0D0208;
 }
 
 /* This class is applied to the columns in the final row overriding the height and padding to provide more room for the contact form */
@@ -226,7 +226,7 @@ footer {
 
 /* Inserts something after "Row" */
 .Row:after {
-    content: ""; /* by leaving this blank, we are allowing the footer to be displayed - removing it makes teh footer overwrite a column */
+    content: ""; /* by leaving this blank, we are allowing the footer to be displayed - removing it makes the footer overwrite a column */
     display: table; /* This tells the browser to treat the element like a table */
     clear: both; /* clears any other elements from floating on the left or the right of an element */
 }
@@ -276,7 +276,7 @@ input[type=submit]:hover {
 /* Form element */
 form {
     border-radius: 5px; 
-    background-color: #f2f2f2;
+    background-color: #008F11;
     padding: 10px; 
     font-family: "Trebuchet MS", Optima;
 }
