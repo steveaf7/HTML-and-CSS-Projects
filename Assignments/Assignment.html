@@ -3,8 +3,22 @@
 	<head>
 		<title>Drums Dogs and Stuff.</title>
 		<meta charset="utf-8">
+		<style>
+			body {
+				opacity: 1;
+				transition: 1s opacity;
+			}
+
+			body.fade-out {
+				opacity: 0;
+				transition: none;
+			}
+		</style>
 	</head>
 	<body>
+		<script>
+			document.body.classList.add('fade-out');
+		</script>
 		<header>
 			<nav>
 				<a href="Assignment.html">HOME</a>
@@ -40,5 +54,10 @@
 			</nav>	
 			<h6>This website was made by, for, and resembling Steve. &copy Steve<h6>
 		</footer>
+		<script>
+			window.addEventListener('DOMContentLoaded', () => {
+				document.body.classList.remove('fade-out');
+			});
+		</script>
 	</body>
 </html>

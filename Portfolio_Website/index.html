@@ -14,10 +14,12 @@
         <!-- Navbar -->
         <div class="Navbar">
             <a class="active" href="#Home">Home</a>
+            <a href="#Slideshow">Slideshow</a>
             <a href="#About">About</a>
             <a href="#GitHub">GitHub</a>
-            <a href="#Contact">Collaborate</a>
+            <a onclick="openForm()" ondblclick="closeForm()">Collaborate</a>
         </div>
+
 
         <!-- Breaks inserted to add space between navbar and first heading -->
         <br>
@@ -48,6 +50,59 @@
                 </p>
             </strong>
         </div>
+        <!-- end video text -->
+
+        <!-- Slideshow section -->
+        <div id="Slideshow">
+            <div id="Slideshow_Background">
+                <div id="Slideshow_Container">
+                    <!-- Slide 1 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="images/Picture_of_Me.jpg" alt="Picture of me">
+                        <div class="text">I'm available to assist you on your project!</div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="images/HTML_CSS_and_JavaScript.jpeg" alt="HTML, CSS, and JS logos">
+                        <div class="text">I am a full stack developer, <br> trained in:<br>HTML, CSS, JavaScript,</div>
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="images/Python.png" alt="Python logo">
+                        <div class="text">the popular programming language Python,</div>
+                    </div>
+                    <!-- Slide 4 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="images/C_Sharp_and_Dot_NET.png" alt="C# logo">
+                        <div class="text">C#, .NET Framework, ASP.NET, MVC, </div>
+                    </div>
+                    <!-- Slide 5 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="images/SQL_and_Database.jpg" alt="SQL logo">
+                        <div class="text">back end development, databases and SQL.</div>
+                    </div>
+                    <!-- Slide 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="images/thumbnail_3.png" alt="Replace with your own picture">
+                        <div class="text"><a class="white-text" onclick="openForm()" href="#Contact">Message to Collaborate</a></div>
+                    </div>
+                    <!-- previous and next buttons -->
+                    <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="Next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br> <!-- adds a space between the image and the dots -->
+
+                <!-- slideshow dots -->
+                <div style="text-align: center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                    <span class="dot" onclick="currentSlide(6)"></span>
+                </div>
+            </div>
+        </div>
 
         <!--About Section-->
         <div class="Row" id="About">
@@ -59,13 +114,18 @@
             <div class="Column_1">
                 <h1>About</h1>
                 <p>
+                    I am a full stack software developer and a graduate of 
+                    <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>'s 
+                    Software Developer Boot Camp, and trained and experienced in the following web and 
+                    programming languages: HTML, CSS, JavaScript, SQl, Python, C# and more. 
+                    <br>
+                    <br>
                     Playing music from a young age, I have learned to be persistent, and that learning is a lifelong journey. 
-                    <br>
-                    <br>
                     Music has taught me to be creative and open-minded, and that hard work will bring rewards.
                     <br>
                     <br>
-                    Throughout this journey, I have learned the benefits of collaboration. What can we create together? 
+                    Throughout this journey, I have learned and enjoyed the benefits of collaboration. 
+                    What can we create together? <a onclick="openForm()">Contact</a>
                 </p>
             </div>
         </div>
@@ -80,6 +140,13 @@
                     <br>
                     <p class="center"><a href="https://github.com/steveaf7" target="_blank">Steven Fralix GitHub</a></p>
                 </p>
+                <br>
+                <h1>Linked In</h1>
+                <p class="center">
+                    You can my view my LinkedIN here:
+                    <br>
+                    <p class="center"><a href="https://www.linkedin.com/in/steven-fralix-4795a2208/" target="_blank">Steven Fralix LinkedIN</a></p>
+                </p>
             </div>
             <!--Right Column-->
             <div class="Column_2">
@@ -89,22 +156,23 @@
 
 
         <!--Contact Section-->
-        <div class="Row" id="Contact">
-            <!--Contact image, left-column-->
-            <div class="Column_2 Column_tall">
-                <img src="images/thumbnail_3.png" alt="Contact Image">
-            </div>
-            <!--Contact form, right column-->
-            <div class="Column_1 Column_tall">
-                <h1>Collaborate</h1>
-                <form action="" method="POST">
-                    <label>Name:</label>
-                        <input type="text" placeholder="Please enter your name here">
-                    <label>Email:</label>
-                        <input type="text" placeholder="Please enter your email here">
-                    <label>Message:</label>
-                        <input type="text" id="Message" name="Message" placeholder="Please write your message here">
-                        <input type="submit" value="SUBMIT">           
+        <div id="Contact">
+            <button onclick="openForm()" class="Pop_Up_Button">CONTACT</button>
+            <div class="form-popup" id="myForm">
+                <form action="https://formspree.io/steveaf7@gmail.com" method="POST" class="form-container">
+                    <h1>Collaborate</h1>
+                    <label for="name"><b>Name</b></label>
+                      <input type="text" placeholder="Type your name here" name="name" required>
+                    <label for="phone"><b>Phone</b></label>
+                      <input type="text" placeholder="Type your phone number here" name="phone">
+                    <label for="email"><b>Email</b></label>
+                      <input type="text" placeholder="Type your email address here" name="email" required>
+                    <label for="message"><b>Message</b></label>
+                      <input type="text" placeholder="Start our conversation here" name="message">
+                    
+
+                    <button type="submit" class="btn">SUBMIT</button>
+                    <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
                 </form>
             </div>
         </div>
@@ -112,9 +180,10 @@
         <!--Footer section-->
         <footer>
             <p>
-                <p class="center">&copyFralix Technology <a href="https://github.com/steveaf7" target="_blank">steveaf7</a></p>
+                <p class="center">&copy Fralix|Technology </p>
                 <br>
             </p>
         </footer>
+        <script src="js/portfolio.js"></script>
     </body>
 </html>

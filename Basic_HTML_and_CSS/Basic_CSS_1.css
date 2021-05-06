@@ -1,8 +1,18 @@
+
+
 p	{
 	color: burlywood;
 	text-align: center;
 }
 p2	{
+	
 	color: darksalmon;
 	text-align: left;
+	position: relative;
+	animation: mymove 5s infinite;
+}
+
+@keyframes p2 {
+	from {top: 0px;}
+	to {top: 200px;}
 }

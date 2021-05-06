@@ -1,0 +1,25 @@
+<!Doctype html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <form name="phone" action="" onsubmit="return validateForm()" method="post">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name"><br>
+            <label for="phonenumber">Phone Number:</label><br>
+            <input type="text" id="phonenumber" name="phonenumber">
+            <input type="submit">
+        </form>
+        <script>
+            function validateForm() {
+                var y = document.forms["phone"]["phonenumber"].value;
+                if (y == "") {
+                    alert("Please enter phone number and try again.");
+                    return False;
+                }
+            }
+            
+        </script>
+    </body>
+</html>

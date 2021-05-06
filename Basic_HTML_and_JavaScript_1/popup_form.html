@@ -1,0 +1,32 @@
+<!Doctype html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="popup_form_css.css" type="text/css">
+
+    </head>
+    <body>
+        <button type="submit" class="open-button" onclick="openForm()">open form</button>
+        <div class="form-popup" id="myForm">
+            <form action="" class="form-container">
+                <h1>Login to Enter</h1>
+
+                <label for="username"><b>Username</b></label>
+                <input type="text" placeholder="Username" name="username" required>
+
+                <label for="key"><b>KeyPhrase</b></label>
+                <input type="password" placeholder="KeyPhrase" name="key" required>
+
+                <button type="submit" class="btn">Login</button>
+                <button type="submit" class="btn cancel" onclick="closeForm()">Exit</button>
+            </form>
+            <script>
+                function openForm() {
+                    document.getElementById("myForm").style.display = "block";
+                }
+                function closeForm() {
+                    document.getElementById("myForm").style.display = "none";
+                }
+            </script>
+        </div>
+    </body>
+</html>
